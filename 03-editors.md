@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+I've decided to use nano FOR NOW. Because its simple and I can transission to vim in vim or in PyCharm's vim emulator.
 
 ---
 
