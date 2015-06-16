@@ -61,6 +61,25 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+* I've decided to use PyCharm for now, and gradually transitioning to vim using the vim emulator in PyCharm, because I have used IDEs before and I believe its best to start at an intermediate level.
+---FEATURES I FIND INTERESTING---
+* Git (VCS) Integration + Issue Tracker 
+* CONFIGURABLE LANGUAGE INJECTIONS
+Language injections allow you to natively edit non-Python code, which is embedded into string literals, with code completion, error-highlighting, and other coding assistance features.
+*CODE ANALYSIS — "... inspecting the whole project for possible errors or code smells."
+* Quick - fixes for most inspections make it easy to fix or improve the code instantly. Alt+Enter shows appropriate options for each inspection.
+* Code snippets — save time using advanced customizable and parametrized code templates and snippets.
+---Useful Keyboard Shortcuts---
+Alt + Enter: Generate Code
+Ctrl + G: Go to line
+Ctrl + U: Go to Super-method/class
+Ctrl + Alt + L: Reformat code
+Ctrl + Alt + O: Auto-indent line(s)
+Ctrl + Alt + F8: Quick evaluate expression
+Ctrl + K/T: Commit/Update to VCS
+.....
+---Costomization---
+* Use Anaconda + IPython "magic commands" with Python interpreter
+* VI/Vim emulation mode
 
 ---
