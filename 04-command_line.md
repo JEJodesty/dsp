@@ -1,4 +1,4 @@
-# Learn command line
+*# Learn command line
 
 Please follow and complete the free online [Command Line Crash Course
 tutorial](http://cli.learncodethehardway.org/book/). This is a great,
@@ -14,42 +14,42 @@ Make a cheat sheet for yourself: a list of commands and what they do, focused on
 
 ---CHEAT SHEET---
 
-pwd - print working directory 
-hostname - my computer's network name
-mkdir - make directory 
+* pwd - print working directory 
+* hostname - my computer's network name
+* mkdir - make directory 
   * 'mkdir -p <dir path>' (*)
   * mkdir "I Have Fun" (*)
-rmdir - remove directory
-cd - change directory 
+* rmdir - remove directory
+* cd - change directory 
   * 'cd ~' - takes you to your home directory (*)
-ls - list directory 
+* ls - list directory 
   * 'ls -1R' takes tou to a "leaf" directory (*)
   ls <dir/> - lists items in referenced dir (*)
-pushd - push directory (*)
+* pushd - push directory (*)
   *In Linux/Unix 'pushd', if you run it by itself with no arguments, will switch between your current directory and the last    one you pushed. 
   *It's an easy way to switch between two directories.
-popd - pop directory (*)
-cp - copy a file or directory - 'cp iamcool.txt neat.txt' (*)
+* popd - pop directory (*)
+* cp - copy a file or directory - 'cp iamcool.txt neat.txt' (*)
   * cp awesome.txt something/ - copy file into directory (*)
   * cp -r - to copy more directories with files in them. (*)
     * 'cp -r something newplace' - make a new directory and copy a file into that directory
-mv - move a file or directory OR rename a file (*)
-less - page through a file
-cat - print the whole file - 'cat <file.txt> <file2.txt>' concatinates texts of both files
-xargs - execute arguments
-find - find files
-grep - find things inside files
-man - read a manual page
-apropos - find what man page is appropriate
-env - look at your environment
-echo - print some argumentss
-export - export/set a new environment variable
-exit - exit the shell
-sudo - DANGER! become super user root DANGER! (*)
-touch - make an empty file '$ touch iamcool.txt' (*)
-rm - remove (delete) a file - 'rm <file>' or 'rm something/awesome.txt' 
+* mv - move a file or directory OR rename a file (*)
+* less - page through a file
+* cat - print the whole file - 'cat <file.txt> <file2.txt>' concatinates texts of both files
+* xargs - execute arguments [build and execute command lines from standard input] (*) (See below)
+* find - find files
+* grep - find things inside files
+* man - read a manual page
+* apropos - find what man page is appropriate
+* env - look at your environment
+* echo - print some argumentss
+* export - export/set a new environment variable
+* exit - exit the shell
+* sudo - DANGER! become super user root DANGER! (*)
+* touch - make an empty file '$ touch iamcool.txt' (*)
+* rm - remove (delete) a file - 'rm <file>' or 'rm something/awesome.txt' 
   * 'rm -rf newplace' - rm directory with files in it
-xargs - build and execute command lines from standard input (*) (See below)
+
 
 ---Notes---
 * Put a / (slash) at the end of a directory to make sure the file is really a directory, 
