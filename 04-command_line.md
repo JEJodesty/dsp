@@ -51,7 +51,7 @@ touch - make an empty file '$ touch iamcool.txt' (*)
 rm - remove (delete) a file - 'rm <file>' or 'rm something/awesome.txt' 
   > 'rm -rf newplace' - rm directory with files in it
 xargs - build and execute command lines from standard input (*) (See below)
----Notes---
+----Notes----
 > Put a / (slash) at the end of a directory to make sure the file is really a directory, 
 > so if the directory doesn't exist you'll get an error.
 ---
