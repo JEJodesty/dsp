@@ -79,22 +79,22 @@ What does `xargs` do? Give an example of how to use it.
 * I can use it to compress multiple files of paticular types into a .tgz file
 
 Joshua@joshej07 ~/xargsExample
-$ ls -1h
-file1.jpg
-file1.pdf
-file1.txt
-file2.jpg
-file2.pdf
-file2.txt
-file3.jpg
-file3.pdf
-file3.txt
-file4.jpg
-file4.pdf
-file4.txt
-file5.jpg
-file5.pdf
-file5.txt
+$ ls 
+* file1.jpg
+ file1.pdf
+ file1.txt
+ file2.jpg
+ file2.pdf
+ file2.txt
+ file3.jpg
+ file3.pdf
+ file3.txt
+ file4.jpg
+ file4.pdf
+ file4.txt
+ file5.jpg
+ file5.pdf
+ file5.txt
 
 Joshua@joshej07 ~/xargsExample
 $ find . -maxdepth 1 -name "*.jpg" | xargs tar -czvf jpeg.tgz
