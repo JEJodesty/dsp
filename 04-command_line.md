@@ -98,36 +98,36 @@ $ ls
 
 Joshua@joshej07 ~/xargsExample
 $ find . -maxdepth 1 -name "*.jpg" | xargs tar -czvf jpeg.tgz
-./file1.jpg
-./file2.jpg
-./file3.jpg
-./file4.jpg
-./file5.jpg
+* ./file1.jpg
+ ./file2.jpg
+ ./file3.jpg
+ ./file4.jpg
+ ./file5.jpg
 
 Joshua@joshej07 ~/xargsExample
-$ tar -tzf jpeg.tgz
-./file1.jpg
-./file2.jpg
-./file3.jpg
-./file4.jpg
-./file5.jpg
+* $ tar -tzf jpeg.tgz
+* ./file1.jpg
+ ./file2.jpg
+ ./file3.jpg
+ ./file4.jpg
+ ./file5.jpg
 
 Joshua@joshej07 ~/xargsExample
-$ ls
-file1.jpg  file1.txt  file2.pdf  file3.jpg  file3.txt  file4.pdf  file5.jpg  file5.txt
-file1.pdf  file2.jpg  file2.txt  file3.pdf  file4.jpg  file4.txt  file5.pdf  jpeg.tgz
+* $ ls
+* file1.jpg  file1.txt  file2.pdf  file3.jpg  file3.txt  file4.pdf  file5.jpg  file5.txt
+ file1.pdf  file2.jpg  file2.txt  file3.pdf  file4.jpg  file4.txt  file5.pdf  jpeg.tgz
 
 >---Example 2---
 
 Joshua@joshej07 ~/xargsExample
-$ echo {1..15}
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+* $ echo {1..15}
+* 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 
 Joshua@joshej07 ~/xargsExample
-$ echo {1..15} | xargs -n5
-1 2 3 4 5
-6 7 8 9 10
-11 12 13 14 15
+* $ echo {1..15} | xargs -n5
+* 1 2 3 4 5
+ 6 7 8 9 10
+ 11 12 13 14 15
 
 
 ---
