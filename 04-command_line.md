@@ -79,7 +79,7 @@ What does `xargs` do? Give an example of how to use it.
 * I can use it to compress multiple files of paticular types into a .tgz file
 
 Joshua@joshej07 ~/xargsExample
-$ ls 
+* $ ls 
 * file1.jpg
  file1.pdf
  file1.txt
@@ -97,7 +97,7 @@ $ ls
  file5.txt
 
 Joshua@joshej07 ~/xargsExample
-$ find . -maxdepth 1 -name "*.jpg" | xargs tar -czvf jpeg.tgz
+* $ find . -maxdepth 1 -name "*.jpg" | xargs tar -czvf jpeg.tgz
 * ./file1.jpg
  ./file2.jpg
  ./file3.jpg
