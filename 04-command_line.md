@@ -17,23 +17,22 @@ Make a cheat sheet for yourself: a list of commands and what they do, focused on
 pwd - print working directory 
 hostname - my computer's network name
 mkdir - make directory 
-  > 'mkdir -p <dir path>' (*)
-  > mkdir "I Have Fun" (*)
+  * 'mkdir -p <dir path>' (*)
+  * mkdir "I Have Fun" (*)
 rmdir - remove directory
 cd - change directory 
-  > 'cd ~' - takes you to your home directory (*)
+  * 'cd ~' - takes you to your home directory (*)
 ls - list directory 
-  > 'ls -1R' takes tou to a "leaf" directory (*)
-  > ls <dir/> - lists items in referenced dir (*)
+  * 'ls -1R' takes tou to a "leaf" directory (*)
+  ls <dir/> - lists items in referenced dir (*)
 pushd - push directory (*)
-  > In Linux/Unix 'pushd', if you run it by itself with no arguments, 
-  > will switch between your current directory and the last one you pushed. 
-  > It's an easy way to switch between two directories.
+  *In Linux/Unix 'pushd', if you run it by itself with no arguments, will switch between your current directory and the last    one you pushed. 
+  *It's an easy way to switch between two directories.
 popd - pop directory (*)
 cp - copy a file or directory - 'cp iamcool.txt neat.txt' (*)
-  > cp awesome.txt something/ - copy file into directory (*)
-  >  cp -r - to copy more directories with files in them. (*)
-    > 'cp -r something newplace' - make a new directory and copy a file into that directory
+  * cp awesome.txt something/ - copy file into directory (*)
+  * cp -r - to copy more directories with files in them. (*)
+    * 'cp -r something newplace' - make a new directory and copy a file into that directory
 mv - move a file or directory OR rename a file (*)
 less - page through a file
 cat - print the whole file - 'cat <file.txt> <file2.txt>' concatinates texts of both files
@@ -49,11 +48,12 @@ exit - exit the shell
 sudo - DANGER! become super user root DANGER! (*)
 touch - make an empty file '$ touch iamcool.txt' (*)
 rm - remove (delete) a file - 'rm <file>' or 'rm something/awesome.txt' 
-  > 'rm -rf newplace' - rm directory with files in it
+  * 'rm -rf newplace' - rm directory with files in it
 xargs - build and execute command lines from standard input (*) (See below)
-----Notes----
-> Put a / (slash) at the end of a directory to make sure the file is really a directory, 
-> so if the directory doesn't exist you'll get an error.
+
+---Notes---
+* Put a / (slash) at the end of a directory to make sure the file is really a directory, 
+* so if the directory doesn't exist you'll get an error.
 ---
 
 
@@ -61,11 +61,11 @@ xargs - build and execute command lines from standard input (*) (See below)
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-'ls' lists out the contents of the directory you are currently in
-'ls -a' - reveals "hidden" current ('.') or parent ('..') directories 
-'ls -1h' - displays contents of directory in long list format
-'la -1h -a' in meaningfull because it lists directories in long list format 
-  > and includes "hidden" current ('.') or parent ('..') directories 
+* 'ls' lists out the contents of the directory you are currently in
+* 'ls -a' - reveals "hidden" current ('.') or parent ('..') directories 
+* 'ls -1h' - displays contents of directory in long list format
+* 'la -1h -a' in meaningfull because it lists directories in long list format 
+  * and includes "hidden" current ('.') or parent ('..') directories 
 
 ---
 
@@ -74,9 +74,9 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 
 What does `xargs` do? Give an example of how to use it.
 
-> xargs - build and execute command lines from standard input  
-> ---Example 1--- 
->I can use it to compress multiple files of paticular types into a .tgz file
+* xargs - build and execute command lines from standard input  
+---Example 1--- 
+* I can use it to compress multiple files of paticular types into a .tgz file
 
 Joshua@joshej07 ~/xargsExample
 $ ls -1h
