@@ -18,7 +18,11 @@ These exercises are implemented with doctests, which are runnable tests inside d
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+* Similarities: "lists" and "tuples" 
+  * Both are sequences of values, that are indexed by integers, and can be any type.
+* Differences: "lists" and "tuples"
+  * "lists" are mutable, and "tuples" are immutable.
+* Tuples will work as keys in dictionaries because tuples are immutable (can't be changed), which is necessary for the mapping of keys to values for the key-value pairs.
 
 ---
 
