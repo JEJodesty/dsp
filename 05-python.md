@@ -72,35 +72,33 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
 * List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.
-* nums = range(10)
- *evens []  
-* `map`
-> a = range(1, 20)
-> a
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
->>> b = []
->>> for i in a:
-...   b.append(i*2)
-...
->>> b
-[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38]
->>>
->>> def double(x):
-...   return x * 2
-...
->>> map(double, a)
-[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38]
->>>
->>> def is_even(x):
-...   return x % 2 == 0
-...
->>> is_even(2)
-True
->>> is_even(3)
-False
->>>
->>> filter(is_even, a)
-[2, 4, 6, 8, 10, 12, 14, 16, 18]
+* Eaxample: Comparison - `map` then `filter` doesnt need loops in this example
+ * >>> a = range(1, 20)
+ * >>> a
+ * [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+ * >>> b = []
+ * >>> for i in a:
+ * ...   b.append(i*2)
+ * ...
+ * >>> b
+ * [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38]
+ * >>>
+ * >>> def double(x):
+ * ...   return x * 2
+ * ...
+ * >>> map(double, a)
+ * [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38]
+ * >>>
+ * >>> def is_even(x):
+ * ...   return x % 2 == 0
+ * ...
+ * >>> is_even(2)
+ * True
+ * >>> is_even(3)
+ * False
+ * >>>
+ * >>> filter(is_even, a)
+ * [2, 4, 6, 8, 10, 12, 14, 16, 18]
 ---
 
 
