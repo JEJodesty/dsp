@@ -35,14 +35,18 @@ How are Python lists and sets similar and different? Give examples of using both
  * Only sets can't contain duplacates and are unordered.
  * When a single strng is a set argument, the charaters are split
  * Can perform unions, intersetions, etc. on sets
-* Example 1:
+* Example: List
+ * >>> a = range(1, 20)
+ * >>> a
+ * [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+* Example Set A:
  * >>> basket = ['apple', 'orange', 'kale', 'apple', 'pear', 'orange', 'lettuce', 'banana']
  * >>> fruit = set(basket)
  * >>> fruit - veg
  * >>> veg = set(['kale', 'lettuce'])
  * >>> fruit - veg
  * set(['orange', 'pear', 'apple', 'banana'])
-*Example 2:
+*Example Set B:
  * >>> nums = [1, 2, 3, 4, 6, 8, 10]
  * >>> numset = set(nums)
  * >>> oddset = set([1, 3, 5, 7, 9])
@@ -72,7 +76,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
 * List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.
-* Eaxample: Comparison - `map` then `filter` doesnt need loops in this example
+* Big Eaxample (`map` & `filter`): Comparison - `map` & `filter` doesnt need loops in this example
  * >>> a = range(1, 20)
  * >>> a
  * [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
@@ -99,6 +103,16 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
  * >>>
  * >>> filter(is_even, a)
  * [2, 4, 6, 8, 10, 12, 14, 16, 18]
+* Example (Set Comprehention)
+ * >>> x = set([2, 4, 6, 8])
+ * >>> type(x)
+ * <type 'set'>
+ * >>> y = {n*3 for n in x}
+ * >>> y
+ * set([24, 18, 12, 6])
+* Example: Dictionary Comprehention
+ * >>> {key: value for (key, value) in enumerate('bigdata')}
+ * {0: 'b', 1: 'i', 2: 'g', 3: 'd', 4: 'a', 5: 't', 6: 'a'}
  
 ---
 ---
