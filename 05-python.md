@@ -37,18 +37,18 @@ How are Python lists and sets similar and different? Give examples of using both
  * Can perform unions, intersetions, etc. on sets
 * Example 1:
  * >>> basket = ['apple', 'orange', 'kale', 'apple', 'pear', 'orange', 'lettuce', 'banana']
-   >>> fruit = set(basket)
-   >>> fruit - veg
-   >>> veg = set(['kale', 'lettuce'])
-   >>> fruit - veg
-   set(['orange', 'pear', 'apple', 'banana'])
+ * >>> fruit = set(basket)
+ * >>> fruit - veg
+ * >>> veg = set(['kale', 'lettuce'])
+ * >>> fruit - veg
+ * set(['orange', 'pear', 'apple', 'banana'])
 *Example 2:
  * >>> nums = [1, 2, 3, 4, 6, 8, 10]
-   >>> numset = set(nums)
-   >>> oddset = set([1, 3, 5, 7, 9])
-   >>> oddset = set([1, 3, 5, 7, 9])
-   >>> numset | oddset
-set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+ * >>> numset = set(nums)
+ * >>> oddset = set([1, 3, 5, 7, 9])
+ * >>> oddset = set([1, 3, 5, 7, 9])
+ * >>> numset | oddset
+ * set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 * Performance Compare: Sets are significantly faster when it comes to determining if an element is in the set (as in x in s), but are slower than lists when it comes to iterating over their contents. [timeit]
 
 ---
@@ -59,23 +59,10 @@ set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 * `lambda` is shorthand to create an anonymous function (a function without a name or deffenition); the expression 'lambda arguments: expression' yields a function object. The unnamed object behaves like a function object
-* Lambda functions can be used wherever function objects are required. They are syntactically restricted to a single expression. Morr specifically, it can be used when you don't really want to define a function with a name, possibly because that function will only be used one time and not numerous times.
-*   def sort_last(tuples):
-    """
-    Given a list of non-empty tuples, return a list sorted in
-    increasing order by the last element in each tuple.
-    e.g. [(1, 7), (1, 3), (3, 4, 5), (2, 2)] yields
-         [(2, 2), (1, 3), (3, 4, 5), (1, 7)].
-    >>> sort_last([(1, 3), (3, 2), (2, 1)])
-    [(2, 1), (3, 2), (1, 3)]
-    >>> sort_last([(2, 3), (1, 2), (3, 1)])
-    [(3, 1), (1, 2), (2, 3)]
-    >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
-    [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
-    """
-    newlist = sorted(tuples, key=lambda x: x[-1])
-    return newlist
-    raise NotImplementedError
+* Lambda functions can be used wherever function objects are required. They are syntactically restricted to a single expression. More specifically, it can be used when you don't really want to define a function with a name, possibly because that function will only be used one time and not numerous times.
+* Example: Look familiar? :bowtie: 
+ *   Returns a list sorted in increasing order by the last element in each tuple
+ *   >>> sorted([(1, 7), (3, 4, 5), (2, 2), (5, 6, 10), (1, 3)], key=lambda x: x[-1])
 
 ---
 
@@ -83,21 +70,37 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 ---
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
-* List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.
-* `map`
- * def fahrenheit(T):
-    return ((float(9)/5)*T + 32)
-   def celsius(T):
-    return (float(5)/9)*(T-32)
-   temp = (36.5, 37, 37.5,39)
-   F = map(fahrenheit, temp)
-   C = map(celsius, F)
-* `filter`
- * >>> fib = [0,1,1,2,3,5,8,13,21,34,55]
-   >>> result = filter(lambda x: x % 2 == 0, fib)
-   >>> print result
-   [0, 2, 8, 34]
 
+* List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.
+* nums = range(10)
+ *evens []  
+* `map`
+> a = range(1, 20)
+> a
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+>>> b = []
+>>> for i in a:
+...   b.append(i*2)
+...
+>>> b
+[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38]
+>>>
+>>> def double(x):
+...   return x * 2
+...
+>>> map(double, a)
+[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38]
+>>>
+>>> def is_even(x):
+...   return x % 2 == 0
+...
+>>> is_even(2)
+True
+>>> is_even(3)
+False
+>>>
+>>> filter(is_even, a)
+[2, 4, 6, 8, 10, 12, 14, 16, 18]
 ---
 
 
