@@ -99,8 +99,9 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
  * >>>
  * >>> filter(is_even, a)
  * [2, 4, 6, 8, 10, 12, 14, 16, 18]
+ 
 ---
-
+---
 
 Write a Markov text generator, [markov.py](python/markov.py). Your program should be called from the command line with two arguments: the name of a file containing text to read, and the number of words to generate. For example, if `chains.txt` contains the short story by Frigyes Karinthy, we could run:
 
