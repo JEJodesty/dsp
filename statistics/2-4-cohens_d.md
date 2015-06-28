@@ -1,5 +1,8 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
+* Exercise 2.4: Investigate whether first babies are lighter or heavier than others. Compute Cohen's d to quatify the difference detween groups. 
+  * Question: How does it compare to the difference in pregnancy length?
+
 * Answer
 ```
 First born babies are approximately 0.117 lbs (1.88 oz) lighter that other babies:
@@ -171,4 +174,3 @@ LengthDifference(live, firsts, others)
 ('Difference relative to mean (%age points)', 0.17535259551908602)
 ('---Cohen d', 0.029389469448765332)
 ```
-  
