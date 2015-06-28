@@ -1,7 +1,5 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
->Code
-"""
 import thinkstats2
 import numpy as np
 import math
@@ -125,49 +123,3 @@ others = live[live.birthord != 1]
 
 WeightDifference(live, firsts, others)
 LengthDifference(live, firsts, others)
-"""
-
->Output
-"""
-------Weight------
----Mean
-('First babies', 7.2384382217090071)
-('Others', 7.3561745364381199)
----Standard Deviation
-('First babies', 2.4488029373012217)
-('Others', 2.1689497188194857)
----Variance
-('First babies', 1.8265303984117147)
-('Others', 1.8028984031621189)
----Differences
-('Difference in lbs', -0.11773631472911283)
-('Difference in oz', -1.8837810356658053)
-('Difference relative to mean (%age points)', -1.6129746743593874)
-('---Cohen d', -0.087408739945202638)
-
-------Pegnancy Length------
----Mean
-('First babies', 38.722863741339495)
-('Others', 38.655023717119448)
----Standard Deviation
-('First babies', 2.4488029373012217)
-('Others', 2.1689497188194857)
----Variance
-('First babies', 5.9966358257350905)
-('Others', 4.7043428827671256)
----Diferences
-('Difference in pergnancy length', 0.067840024220046757)
-('Difference relative to mean (%age points)', 0.17535259551908602)
-('---Cohen d', 0.029389469448765332)
-"""
-
-> Conclusions
-"""
-First born babies are approximately 0.117 lbs (1.88 oz) lighter that other babies:
-Cohen d of first born and other babies' weight:
-The difference in weight means is Approx. -0.087
-
-First born babies where born approximately 0.06 weeks later
-Cohen d of first born and other babies' pregnancy length:
-The difference in pregnancy length means is Approx. 0.029
-"""
