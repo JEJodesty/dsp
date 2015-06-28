@@ -1,6 +1,7 @@
 [Think Stats Chapter 4 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2005.html#toc41) (a random distribution)
 
-* Problem: Generate 1000 numbers using random.random plot the PMF and CDF. Is the distribution is uniform?
+* Exercise 2: 
+ * Generate 1000 numbers using random.random plot the PMF and CDF. Is the distribution is uniform?
 
 * Code:
 ```
