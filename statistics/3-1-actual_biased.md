@@ -42,7 +42,7 @@ print 'Biased PMF mean', biased.Mean()
 ```
 
 * Output
-[Imgur](http://i.imgur.com/LaoisUM.png)
+![Imgur](http://i.imgur.com/LaoisUM.png)
 ```
 Means of Children in a household:
 Actual mean 1.02420515504
