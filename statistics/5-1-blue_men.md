@@ -1,6 +1,10 @@
 [Think Stats Chapter 5 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2006.html#toc50) (blue men)
 
 * Question: What percentage of the US male population is in the range of 5'10'' & 6'1''?
+* Output/Answer:
+```
+("Percentage of the US male population is between 5'10'' & 6'1'':", 34.209468294
+```
 
 * Code:
 ```
@@ -22,9 +26,4 @@ diff = high-low
 perc = 100 * diff
 
 print('Percentage of the US male population is between 5\'10\'\' & 6\'1\'\':', perc)
-```
-
-* Output/Answer:
-```
-("Percentage of the US male population is between 5'10'' & 6'1'':", 34.209468294
 ```
