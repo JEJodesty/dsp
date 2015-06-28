@@ -83,26 +83,26 @@ if __name__ == "__main__":
 ```
 
 * Output:
--------Results with log_upper=6-------
-mean 74278.7075312
-std 93946.9299635
-median 51226.4544789
-skewness 4.94992024443
-pearson skewness 0.736125801914
-cdf[mean]: 0.660005879567
+>-------Results with log_upper=6-------
+>mean 74278.7075312
+>std 93946.9299635
+>median 51226.4544789
+>skewness 4.94992024443
+>pearson skewness 0.736125801914
+>cdf[mean]: 0.660005879567
 
   * CDF
 ![Imgur](http://i.imgur.com/HUD3m9s.png)
  * PDF
 ![Imgur](http://i.imgur.com/ZtmPVsK.png)
 
--------Results with log_upper=7-------
-mean 124267.397222
-std 559608.501374
-median 51226.4544789
-skewness 11.6036902675
-pearson skewness 0.391564509277
-cdf[mean] 0.856563066521
+>-------Results with log_upper=7-------
+>mean 124267.397222
+>std 559608.501374
+>median 51226.4544789
+>skewness 11.6036902675
+>pearson skewness 0.391564509277
+>cdf[mean] 0.856563066521
 
   * CDF
 ![Imgur](http://i.imgur.com/4Q35k4N.png)
