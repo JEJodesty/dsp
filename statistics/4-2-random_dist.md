@@ -1,6 +1,8 @@
 [Think Stats Chapter 4 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2005.html#toc41) (a random distribution)
 
-* Code
+* Answer: The distribution is uniform.
+
+* Code:
 ```
 import thinkstats2
 import thinkplot
@@ -18,7 +20,7 @@ thinkplot.Show(xlabel='Probability of 1000 Random numbers (PMF)', ylabel='CDF - 
 print "The distribution is uniform."
 ```
 
-* Output
+* Output:
   * PMF & CDF on 1000 generated numbers from random.random
     * PMF
     ![Imgur](http://i.imgur.com/ZVk3phd.png)
