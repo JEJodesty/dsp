@@ -11,7 +11,18 @@
 import thinkstats2
 import thinkplot
 import numpy as np
-from estimation import RMSE
+import math
+
+# Computes the root mean squared error of a sequence of estimates.
+def RMSE(estimates, actual):
+    """
+    estimate: sequence of numbers
+    actual: actual value
+    returns: float RMSE
+    """
+    e2 = [(estimate-actual)**2 for estimate in estimates]
+    mse = np.mean(e2)
+    return math.sqrt(mse)
 
 # Sampling distribution of L as an estimator of exponential parameter.
 def SimulateSample_Exp_Dist(lam=2, n=10, m=1000):
