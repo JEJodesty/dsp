@@ -2,7 +2,7 @@
 
 * Task: Plot actual and biased distributions for how many children are in a family, and compute their means.
 
-* Code
+* Code:
 ```
 import thinkstats2
 import thinkplot
@@ -43,7 +43,8 @@ print 'Actual PMF mean', pmf.Mean()
 print 'Biased PMF mean', biased.Mean()
 ```
 
-* Output
+* Output/Answers:
+  * PMFs: Actual v. Biased
 ![Imgur](http://i.imgur.com/LaoisUM.png)
 ```
 Means of Children in a household:
