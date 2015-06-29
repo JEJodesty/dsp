@@ -24,10 +24,9 @@ Communicate the problem, how you solved it, and the solution, within each of the
 
 
 ---
-```
-Topic: Elvis Presley had a twin brother who died at birth.  
-Question: What is the probability that Elvis was an identical twin?
 
+Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin?
+```
 Background Information: WikiGender: http://www.wikigender.org/index.php/Sex_Differences_and_Twins 
 Twins: Estimated to be approximately 1.9% of the world population 
 Monozygotic Twins (8% of all twins): making up 0.2% of the total world population 
