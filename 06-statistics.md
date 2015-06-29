@@ -24,11 +24,36 @@ Communicate the problem, how you solved it, and the solution, within each of the
 
 
 ---
+```
+Topic: Elvis Presley had a twin brother who died at birth.  
+Question: What is the probability that Elvis was an identical twin?
 
-Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin?
+Background Information: WikiGender: http://www.wikigender.org/index.php/Sex_Differences_and_Twins 
+Twins: Estimated to be approximately 1.9% of the world population 
+Monozygotic Twins (8% of all twins): making up 0.2% of the total world population 
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+Method: Think about twin birth events, rather than individual twins, and remember that Elvis was a twin as background information.
 
+Hypotheses:
+A: Elvis's birth event was an identical birth event
+B: Elvis's birth event was a fraternal twin event
+
+If identical twins are 8% of all twins, then identical birth events are 8% of all twin birth events, so the priors are
+P(A) = 8%
+P(B) = 92%
+
+Relevant Evidence
+E: Elvis's twin was male
+
+Likelihoods
+P(E|A) = 1
+P(E|B) = 1/2
+
+Because identical twins are necessarily the same sex, 
+but fraternal twins are equally likely to be opposite sex (or, at least, I assume so).  
+Therefore:
+P(A|E) = 8/54 ~ 0.15.
+```
 ---
 
 
@@ -36,6 +61,6 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 How do frequentist and Bayesian statistics compare?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+* Frequentists use probability only for sampling. Bayesians uses "prior distribution" - meaning a probability distribution reflecting the state of knowledge about h before collecting any data - to model both sampling and other kinds of uncertainty.
 
 ---
