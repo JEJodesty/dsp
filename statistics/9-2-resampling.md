@@ -1,6 +1,6 @@
 [Think Stats Chapter 9 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2010.html#toc90) (resampling)
 
-* Conclusion: "Using resampling instead of permutation has very little effect on the results. The two models are based on slightly difference assumptions, and in this example there is no compelling reason to choose one or the other. But in general p-values depend on the choice of the null hypothesis; different models can yield very different results." (Downey)
+* Conclusion: Using resampling instead of permutation has insignificant (very little) effects on the results.
 
 * Code:
 ```
@@ -43,4 +43,17 @@ print('\nmeans permute preglength')
 print('p-value =', p_value)
 print('actual =', ht.actual)
 print('ts max =', ht.MaxTestStat())
+```
+
+* Output:
+```
+means permute pregnancy length
+('p-value =', 0.1693)
+('actual =', 0.067840024220046757)
+('ts max =', 0.20395268725967952)
+
+means permute birth weight in Lbs
+('p-value =', 0.0)
+('actual =', 0.14315380424986124)
+('ts max =', 0.10835302705733429)
 ```
