@@ -3,7 +3,7 @@
 Problem: [Think Stats Chapter 8 Exercise 3](http://greenteapress.com/thinkstats2/html/thinkstats2009.html#toc77)
 
 ---
-* Answer: Is this way of making an estimate is slightly biased.
+* Answer: Making an estimate in this manner is slightly biased.
   * MeanError: -0.029850746268656716
 
 * Code:
